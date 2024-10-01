@@ -57,25 +57,25 @@ main {
     color: hsl(30, 10%, 34%);
 }
 
-.Preparation-sect{
+.Preparation-sect {
     margin-top: 15px;
     background-color: hsl(30, 54%, 90%);
     padding-top: 1px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     padding-left: 25px;
     border-radius: 5px;
 }
 
-.Preparation-sect h2{
+.Preparation-sect h2 {
     margin-top: 20px;
-    font-size: 14px;
-    color:hsl(332, 51%, 32%) ;
+    font-size: 16px;
+    color: hsl(332, 51%, 32%);
 }
 
-.Preparation-sect ul li{
+.Preparation-sect ul li {
     padding-bottom: 5px;
-    font-size: 12px;
-    color:  hsl(24, 5%, 18%);
+    font-size: 16px;
+    color: hsl(24, 5%, 18%);
 }
 
 h3, h4, h5 {
@@ -84,30 +84,38 @@ h3, h4, h5 {
     font-size: 16px;
 }
 
-ul, ol {
+.Instructions_sect p{
     text-align: left;
     margin: 10px 0;
     padding-left: 20px;
     padding-bottom: 5px;
-    color:  hsl(24, 5%, 18%);
+    font-size: 16px;
+    
 }
 
-span{
+.num{
+    color: hsl(14, 45%, 36%);
+}
+
+.tire {
     color: black;
     font-weight: bolder;
     padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.title{
+    color: hsl(30, 10%, 34%);
 }
 
 li {
     margin-bottom: 5px;
-    font-size: 12px;
-    color:  hsl(24, 5%, 18%);
+    font-size: 14px;
+    color: hsl(24, 5%, 18%);
     padding-bottom: 5px;
 }
 
 .Nutrition-sect {
-    /* margin-top: 10px; */
-    /* background-color: hsl(30, 54%, 90%); */
     padding: 5px;
     border-radius: 8px;
 }
@@ -115,22 +123,22 @@ li {
 .Nutri_lg {
     font-size: 12px;
     font-weight: bold;
-    color:  hsl(24, 5%, 18%);
-   
+    color: hsl(24, 5%, 18%);
 }
 
 .Nutri_Mb {
-    font-size:12px;
+    font-size: 12px;
     color: hsl(14, 45%, 36%);
     padding-bottom: 10px;
     padding-right: 150px;
 }
+
 .Mb-lg {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
     padding-bottom: 5px;
-    border-bottom: 1px solid hsl(30, 18%, 87%); /* Light gray line */
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 .attribution {
@@ -138,4 +146,97 @@ li {
     text-align: center;
     font-size: 12px;
     color: hsl(332, 58%, 44%);
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    .MB-mentor {
+        max-width: 900px; 
+        padding: 40px; 
+    }
+
+    .recipe_text h1 {
+        font-size: 32px; 
+    }
+
+    .recipe_text p {
+        font-size: 16px; 
+    }
+
+    .Preparation-sect {
+        padding-left: 40px; 
+    }
+
+    .Preparation-sect h2 {
+        font-size: 18px;
+    }
+
+    .Preparation-sect ul li {
+        font-size: 16px; 
+    }
+
+    .Mb-lg {
+        margin: 30px 0; 
+    }
+
+    ul, ol {
+        padding-left: 40px; 
+    }
+    
+    .Nutri_Mb {
+        padding-right: 250px; 
+    }
+}
+
+
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+
+    .MB-mentor {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .Mb-lg {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 15px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+
+    .recipe_text h1 {
+        font-size: 20px;
+    }
+
+    .recipe_text p {
+        font-size: 15px;
+    }
+
+    .Preparation-sect h2 {
+        font-size: 16px;
+    }
+
+    .Preparation-sect ul li {
+        font-size: 15px;
+    }
+
+    .Nutrition-sect {
+        padding: 5px;
+    }
+
+    ul, ol {
+        padding-left: 15px;
+    }
+
+    /* .Nutri_Mb {
+        padding-right: 5rem;
+    } */
 }
